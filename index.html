@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aitu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c50b12ef33.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/aitu-logo_white.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#studentlife">Student life</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>ASTANA IT COLLEGE</h1>
+            <p>Here, students don't just study technologies; they forge their <span>own</span><br> future in the field of information technology.</p>
+        </div>
+    </div> 
+</div>
+<!-------about------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/photo1700509813.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About college</h1><br>
+                <p class="about-text">Astana IT University opens doors to early professional self-discovery, providing opportunities for acquiring a profession, employment, or pursuing further education at a university through a continuous education system. Upon completion of the college program, graduates receive a state-issued diploma, enabling them to continue their education at Astana IT University, other universities in Kazakhstan, or abroad in related fields. Our college not only equips students with practical skills but also fosters a foundation for lifelong learning and career advancement. Join Astana IT University for a transformative educational journey that sets the stage for a successful and fulfilling future.</p><br>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('AITU iCode')">AITU iCode</p>
+                    <p class="tab-links" onclick="opentab('AITUOPEN')" >AITUOPEN</p>
+                    <p class="tab-links" onclick="opentab('AITU Stories')">AITU Stories</p>
+                </div>
+                <div class="tab-contents active-tab" id="AITU iCode">
+                    <ul>
+                        <li>Republican Olympiad in programming for schoolchildren in grades 9-12</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="AITUOPEN">
+                    <ul>
+                        <li>Team Olympiad in sports programming!</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="AITU Stories">
+                    <ul>
+                        <li>An interactive project in which the university talks about its best students and their achievements.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------Programs------>
+<div id="programs">
+    <div class="container">
+        <h1 class="sub-title">Programs</h1>
+        <div class="programs-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Development</h2>
+                <p class="about-programs">The software developer engages in the development of desktop and mobile applications using programming languages such as C#, Java, Python, Swift, and others. They possess fundamental skills in building databases using tools like Access, MySQL, and 1C.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h2>Computer Engineering and Information Networks</h2>
+                <p class="about-programs">A Database Administration Technician is an individual responsible for developing database requirements, designing, implementing, efficiently utilizing, and maintaining a database. This role includes managing user accounts, ensuring database security against unauthorized access, and providing ongoing support.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------Student life------->
+<div id="studentlife">
+    <div class="container">
+        <h1 class="sub-title">Student life</h1>
+        <div class="life-list">
+            <div class="life">
+                <img src="images/aitu-8-1100x490-1.jpg">
+                <div class="layer">
+                    <p class="about-studentlife">Astana IT University actively fosters student self-governance, an integral component of student life that operates with consideration for the opinions of each student. The student self-governance system is an initiative-driven, independent, and communal form of student activity. Astana IT University hosts over 40 student clubs catering to various interests. These clubs provide students with opportunities for engagement, collaboration, and the pursuit of shared passions, enhancing the overall university experience.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!---------Contact------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sup-title">Contact</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Astana IT University</p>
+                <p><i class="fa-solid fa-phone"></i>+7 7172 645 696</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/astanaituniversity"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/astana_it_college/?utm_medium=copy_link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/c/AstanaITUniversity"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://t.me/aitu2020info"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+</body>
+</html>
